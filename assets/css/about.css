@@ -1,0 +1,296 @@
+.navbar_links {
+	display: flex;
+	align-content: center;
+	padding-top: 49px;
+	padding-bottom: 30px;
+}
+
+.navbar_links_internal {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.opacity {
+	opacity: 60%;
+	color: #3e6d82;
+	font-size: 20px;
+	font-family: FuturaND, Helvetica, sans-serif;
+	letter-spacing: 5px;
+	text-decoration: none;
+}
+
+.nopacity {
+	color: #3e6d82;
+	font-size: 20px;
+	font-family: FuturaND, Helvetica, sans-serif;
+	letter-spacing: 5px;
+}
+
+.socialnavbar {
+	display: flex;
+	align-content: center;
+	padding-bottom: 49px;
+}
+
+.socialnavbar_icons {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	flex-direction: row;
+	align-items: center;
+	height: auto;
+	gap: 60px;
+}
+
+#fb,
+#inst,
+#tw {
+	opacity: 60%;
+	width: 30px;
+	height: 30px;
+}
+
+#fb:hover {
+	opacity: unset;
+}
+
+#inst:hover {
+	opacity: unset;
+}
+
+#tw:hover {
+	opacity: unset;
+}
+
+.banner_wallpaper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: auto;
+	padding-bottom: 211px;
+}
+
+.info {
+	display: flex;
+	flex-flow: column wrap;
+	padding-bottom: 127px;
+}
+
+.info_artista {
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: space-between;
+	gap: 100px;
+	padding-left: 100px;
+	padding-bottom: 150px;
+	align-content: center;
+	flex-flow: nowrap;
+}
+
+#photo1 {
+	align-self: flex-end;
+	order: 2;
+	width: 50%;
+	height: auto;
+}
+
+.info_artista_text {
+	width: 640px;
+}
+
+h2 {
+	color: #3e6d82;
+	font-size: 30px;
+	font-family: FuturaND, Helvetica, sans-serif;
+	letter-spacing: 5px;
+}
+
+p {
+	font-size: 15px;
+	font-family: adobe caslon pro, verdana, sans-serif;
+	color: #000000;
+}
+
+.extlink {
+	color: #3e6d82;
+	font-family: FuturaND, Helvetica, sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.extlink:hover {
+	color: #2c4d5d;
+	text-decoration: underline;
+}
+
+.gk {
+	color: #3e6d82;
+	font-size: 15px;
+	font-family: FuturaND, Helvetica, sans-serif;
+	font-variant: small-caps;
+}
+
+.info_progetto {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	gap: 100px;
+	padding-right: 100px;
+	padding-bottom: 150px;
+	align-content: center;
+	flex-flow: nowrap;
+}
+
+#photo2 {
+	align-self: flex-start;
+	width: 50%;
+	height: auto;
+}
+
+#photo3 {
+	align-self: flex-end;
+	order: 2;
+	width: 50%;
+	height: auto;
+}
+
+.info_teaser {
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: space-between;
+	gap: 100px;
+	padding-left: 100px;
+	padding-bottom: 59px;
+	align-content: center;
+	flex-flow: nowrap;
+}
+
+.button_internal_link {
+	background-color: #3e6d82;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 30px;
+	font-family: FuturaND, Helvetica, sans-serif;
+	font-size: 16px;
+	letter-spacing: 5px;
+	border: none;
+}
+
+.button_internal_link:hover {
+	background-color: #2c4d5d;
+}
+
+.loghi_icons {
+	display: flex;
+	background-color: #3e6d82;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	flex-direction: row;
+	align-items: center;
+	height: 230px;
+	gap: 10px;
+}
+
+.loghi_sponsor {
+	height: 150px;
+}
+
+@media only screen and (max-width: 1280px) {
+	.navbar_links {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	.navbar_links .opacity,
+	.navbar_links .nopacity {
+		font-size: 16px;
+	}
+
+	.socialnavbar_icons {
+		gap: 30px;
+	}
+
+	.banner_wallpaper {
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.banner_wallpaper img {
+		width: 100%;
+	}
+
+	.info_artista {
+		padding: 0 16px;
+		flex-direction: column-reverse;
+		gap: 20px;
+		margin: 20px 0;
+	}
+
+	.info_artista_text {
+		width: 100%;
+	}
+
+	#photo1 {
+		align-self: auto;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.info_progetto {
+		padding: 0 16px;
+		flex-direction: column;
+		gap: 20px;
+		margin: 20px 0;
+	}
+
+	#photo2 {
+		align-self: auto;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.info_progetto_text {
+		width: 100%;
+	}
+
+	.info_teaser {
+		padding: 0 16px;
+		flex-direction: column-reverse;
+		gap: 20px;
+		margin: 20px 0;
+	}
+
+	.info_teaser_text {
+		width: 100%;
+	}
+
+	#photo3 {
+		align-self: auto;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.loghi_icons {
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+		padding: 16px;
+	}
+
+	.loghi_icons img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+	}
+
+}

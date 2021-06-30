@@ -1,0 +1,273 @@
+#ImmagineGiocoPrincipale {
+	height: 100%;
+}
+
+#Start {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	transform: translate(-50%, -50%);
+	animation-name: AnimazioneEmoji;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+#UpBar {
+	background-color: #3d6d82;
+	width: 100%;
+	height: 10vh;
+	box-sizing: border-box;
+	top: 0%;
+	left: 0%;
+	padding: 10px;
+}
+@media only screen and (max-width: 1280px) {
+	#UpBar {
+		padding: 0px;
+	}
+}
+body {
+	display: flex;
+	flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#gameContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	gap: 100px;
+}
+
+#gameContentLeft {
+	height: 70%;
+}
+#gameContentRight {
+	width: 500px;
+	text-align: center;
+}
+
+#UpBarContent {
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#UpBarContent > * {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+#GlanKeaneLogo {
+	height: 100%;
+}
+#MuseoLogo {
+	height: 100%;
+}
+#HomeButton {
+	height: 100%;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+#HomeButton img {
+	height: 100%;
+}
+#divCentro {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#divCentroContent {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#DownBar {
+	background-color: #3d6d82;
+	width: 100%;
+	position: relative;
+	bottom: 0%;
+	left: 0%;
+	text-align: center;
+	height: 10vh;
+	line-height: 10vh;
+	box-sizing: border-box;
+}
+#DownBarContent {
+	height: 60px;
+	box-sizing: border-box;
+}
+#DownBarContent,
+#DownBarContent > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#NextImage {
+	height: 100%;
+	opacity: 50%;
+	cursor: pointer;
+}
+
+#PreviousImage {
+	height: 100%;
+	opacity: 50%;
+	cursor: pointer;
+}
+
+#TxtNumeroImmagini {
+}
+
+#continuaButton {
+	width: 100%;
+	height: 100%;
+}
+#EmozioneTxt {
+	font-size: 80;
+}
+#FineTxt {
+	border-left: 250px solid #0000;
+}
+#FineRiga1 {
+	border-left: 140px solid #0000;
+}
+#FineRiga2 {
+	border-left: 140px solid #0000;
+}
+#FineRiga3 {
+	border-left: 130px solid #0000;
+}
+#FineRiga4 {
+	border-left: 130px solid #0000;
+}
+#FineRiga5 {
+	border-left: 238px solid #0000;
+}
+#RiprovaButton {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 16%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+}
+body {
+	overflow: hidden;
+}
+
+div[hidden] {
+	display: none !important;
+}
+
+.FontBianco {
+	font-family: 'FuturaND';
+	font-weight: 500;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 0.5;
+	color: white;
+}
+.FontBlue {
+	font-family: 'FuturaND';
+	font-weight: 500;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 0.5;
+	color: #3d6d82;
+}
+.FontGrigio {
+	font-family: 'FuturaND';
+	font-weight: 500;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 0.5;
+	color: #5a5c56;
+	border-left: 100px solid #0000;
+	opacity: 80%;
+}
+
+#divEmoji {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 120px 50px;
+}
+
+.Emoji {
+	cursor: pointer;
+	width: 120px;
+}
+.Emoji:hover {
+	animation-name: AnimazioneEmoji;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes AnimazioneEmoji {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(20deg);
+	}
+	50% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+#divFine > div {
+	margin: 10px 0;
+	line-height: 1;
+}
+#divFine .FontGrigio,
+#divFine .FontBlue {
+	border: none;
+}
+
+@media only screen and (max-width: 1280px) {
+	#gameContainer {
+		flex-direction: column;
+		gap: 0;
+	}
+	#gameContentRight {
+		width: auto;
+		height: 20vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#gameContentRight .FontBlue {
+		font-size: 40px;
+	}
+	#divEmoji {
+		grid-gap: 20px 20px;
+	}
+
+	.Emoji {
+		width: 60px;
+	}
+
+	#divFine {
+	}
+
+	#divFine .FontGrigio,
+	#divFine .FontBlue {
+		margin: 0;
+		font-size: 20px;
+		line-height: 1.2;
+		border: none;
+	}
+}
