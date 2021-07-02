@@ -53,6 +53,7 @@
 }
 
 .logo-container img {
+	align-self: center;
 	width: 100%;
 }
 
@@ -62,16 +63,14 @@
 	align-items: flex-center;
 }
 
-.home_nav-links {
-	display: flex;
-}
-
 .home_nav-links_internal {
+	display: flex;
 	gap: 100px;
+	justify-content: space-around;
 }
 
 .home_nav-links_internal a {
-	color: #3d6e82;
+	color: #3e6d82;
 	font-size: 18px;
 	text-decoration: none;
 }
@@ -100,4 +99,5 @@
 		align-self: center;
 		width: 70vw;
 	}
+
 }

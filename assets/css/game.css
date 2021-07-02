@@ -14,7 +14,7 @@
 	animation-iteration-count: infinite;
 }
 #UpBar {
-	background-color: #3d6d82;
+	background-color: #3e6d82;
 	width: 100%;
 	height: 10vh;
 	box-sizing: border-box;
@@ -22,11 +22,7 @@
 	left: 0%;
 	padding: 10px;
 }
-@media only screen and (max-width: 1280px) {
-	#UpBar {
-		padding: 0px;
-	}
-}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -61,7 +57,7 @@ body {
 
 #UpBarContent > * {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: center;
 	height: 100%;
 }
 
@@ -95,7 +91,7 @@ body {
 }
 
 #DownBar {
-	background-color: #3d6d82;
+	background-color: #3e6d82;
 	width: 100%;
 	position: relative;
 	bottom: 0%;
@@ -125,9 +121,6 @@ body {
 	height: 100%;
 	opacity: 50%;
 	cursor: pointer;
-}
-
-#TxtNumeroImmagini {
 }
 
 #continuaButton {
@@ -185,7 +178,7 @@ div[hidden] {
 	font-style: normal;
 	font-size: 40px;
 	line-height: 0.5;
-	color: #3d6d82;
+	color: #3e6d82;
 }
 .FontGrigio {
 	font-family: 'FuturaND';
@@ -238,6 +231,10 @@ div[hidden] {
 }
 
 @media only screen and (max-width: 1280px) {
+	#UpBar {
+		padding: 0px;
+	}
+
 	#gameContainer {
 		flex-direction: column;
 		gap: 0;
@@ -257,10 +254,7 @@ div[hidden] {
 	}
 
 	.Emoji {
-		width: 60px;
-	}
-
-	#divFine {
+		width: 50px;
 	}
 
 	#divFine .FontGrigio,
@@ -270,4 +264,74 @@ div[hidden] {
 		line-height: 1.2;
 		border: none;
 	}
+
+	#GlanKeaneLogo {
+		padding: 10px;
+		padding-left: 0px;	
+		height: 60%;
+		vertical-align: center;
+	}
+	#MuseoLogo {
+		padding: 10px;
+		padding-left: 0px;
+		height: 60%;
+		vertical-align: center;
+	}
+
+	#PreviousImage {
+		padding: 10px;
+		height: 60%;
+	}
+
+	#NextImage {
+		padding: 10px;
+		height: 60%;
+	}
 }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	#GlanKeaneLogo {
+		padding: 10px;
+		padding-left: 0px;	
+		height: 80%;
+		vertical-align: center;
+	}
+
+	#MuseoLogo {
+		padding: 10px;
+		padding-left: 0px;
+		height: 80%;
+		vertical-align: center;
+	}
+
+	#divEmoji {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px 40px;
+	}
+	
+	.Emoji {
+		cursor: pointer;
+		width: 90px;
+	}
+
+	#DownBarContent {
+		padding: 0px;
+	}
+
+	#PreviousImage {
+		padding: 20px;
+		height: 100%;
+	}
+
+	#NextImage {
+		padding: 20px;
+		height: 100%;
+	}
+
+  }
+
